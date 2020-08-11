@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">喜马拉雅</string>
+
+    <string-array name="indicator_title">
+
+        <item>推荐</item>
+        <item>订阅</item>
+        <item>历史</item>
+
+    </string-array>
+
+
+    //订阅界面
+    <string name="sub_bt_text">+ 订阅</string>
+    <string name="choose_episode_text">选集</string>
+
+    //播放列表话术
+    <string name="already_first">已经是列表第一首了～～～</string>
+    <string name="already_end">已经是列表最后一首了～～～</string>
+
+    //详情界面话术
+    <string name="load_all_updated">已经是全部啦～～～</string>
+    <string name="load_last_data">已经是最新的数据了～～～</string>
+
+    //搜索界面话术
+    <string name="hint">请输入专辑关键字</string>
+    <string name="search_empty">搜索内容不能为空～～～</string>
+
+    //UILoadState 话术
+    <string name="server_handle_error">服务器错误，请稍后重试～～～</string>
+
+</resources>

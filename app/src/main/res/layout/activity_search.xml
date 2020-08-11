@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/seach_pane"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/bt_back_bg_selector"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:hint="@string/hint"
+                android:textSize="16sp"
+                android:textCursorDrawable="@drawable/text_cursor_bg"
+                android:background="@drawable/ed_sesrch_bg" />
+
+            <ImageView
+                android:id="@+id/input_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/input_delete_icon"
+                android:layout_gravity="end|center_vertical"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:background="@android:color/transparent"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seach_pane"/>
+
+    <com.example.ximalaya.view.UILoader
+        android:id="@+id/ui_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seach_pane"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
